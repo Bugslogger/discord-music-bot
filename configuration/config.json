@@ -1,0 +1,13 @@
+{
+  "client_id": "1119914765100269598",
+  "version": "1.0.0",
+  "bot_author": {
+    "username": "MrDark",
+    "id": "540951645945593867"
+  },
+  "permissions": {
+    "SendMessage": "SendMessages",
+    "Admin": "Administrator",
+    "VoiceJoin": "Connect"
+  }
+}

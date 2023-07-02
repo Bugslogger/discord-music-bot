@@ -1,0 +1,63 @@
+Step 1:
+firstly we will install all packages
+Packages:
+discord.js
+distube
+dotenv
+sodium-native
+@discordjs/voice
+@discordjs/opus
+
+dev dependancy
+nodemon (not required optional)
+
+Now let install all packages.
+
+FOR SLASH COMMANDS:
+OK WE DON'T NEED ANOTHER PACKAGE IT'S ALREADY IN DISCORD.JS
+
+Step 2:
+create file structure.
+
+Step 3:
+create a bit and invite to discord server. [we have done right now]
+
+Step 4: setup the configuration for bot.
+
+1. client Id is your bot ID.
+2. permissions are the one which we will check for user/bot if he/she has permission to use commands.
+3. bot_author is optional.
+
+Step 5: create music commands ins Music folder.
+
+Step 6: make our bot alive.
+
+1. install some plugin packages.
+   @distube/spotify
+   @distube/soundcloud
+   @distube/yt-dlp
+
+Note: on my discord slash commmands does not work so i will switch my account.
+
+Step 7:
+Start Creating our music bot
+
+1. compeletd loading commands
+2. load all events
+3. loadcommands
+4. register slash
+5. distube events
+6. events
+7. write index.js
+8. write all music commands
+   a.similarly copy and paste the same code and make few changes it it.
+   b. let test the bot with basic commands
+   c. let first fix the errors
+
+here we are missing FFMPEG
+I have already downloaded it.
+you can download it from my github.
+
+NOTE:
+I have already made another video on nodejs installlation
+please install nodejs before starting this video.
