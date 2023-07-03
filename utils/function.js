@@ -14,6 +14,19 @@ function DistubeEmbedMessage(interaction, object) {
   interaction.textChannel.send({ embeds: [embed] });
 }
 
+// let create our function here.
+function TextEmbed(interaction, object) {
+  const embed = {
+    title: object.title || "",
+    description: object.desc || "",
+    timestamp: object.time,
+    Author: object.author || "",
+    color: 15110828,
+  };
+
+  interaction.reply({ embeds: [embed] });
+}
+
 function isVoiceChannel(interaction) {
   try {
     const member = interaction.member.voice.channel; //user voice channel
@@ -30,4 +43,4 @@ function isVoiceChannel(interaction) {
   }
 }
 
-module.exports = { DistubeEmbedMessage, isVoiceChannel };
+module.exports = { DistubeEmbedMessage, isVoiceChannel, TextEmbed };

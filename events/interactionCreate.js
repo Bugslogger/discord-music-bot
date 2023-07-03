@@ -35,6 +35,7 @@ module.exports = async (bot, interaction) => {
       }
     }
     if (!interaction.isChatInputCommand()) return;
+    // await interaction.deferReply();
 
     const { SendMessage, VoiceJoin } = permissions; // for checking permissions
 
@@ -49,8 +50,6 @@ module.exports = async (bot, interaction) => {
     }
 
     const commandFile = bot.commands.get(interaction.commandName); // get command user has requested.
-    console.log(bot.commands.get("play"));
-    // console.log(bot);
 
     if (!commandFile) return;
 

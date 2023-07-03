@@ -14,13 +14,13 @@ module.exports = function (bot) {
     //   this returns array
     //  we will map it.
     readdirSync(`${process.cwd()}/commands`).forEach((folders) => {
-      console.log(folders);
+      // console.log(folders);
       // getting files from each folders
       const file = readdirSync(`${process.cwd()}/commands/${folders}`).filter(
         (files) => {
           // check if the files ends with .js extension or not
           //  if ends with .js extension then return the file
-          console.log(files);
+          // console.log(files);
           return files.endsWith(".js");
         }
       );
@@ -29,11 +29,11 @@ module.exports = function (bot) {
       for (let commandName of file) {
         // here we are getting each files from command folders
         const command = require(`${process.cwd()}/commands/${folders}/${commandName}`);
-        console.log(command);
+
         if (!commandName) return; // if there no command it will terminate
         // adding files config in array
         commandArray.push(command.config);
-        bot.commands.set(command.config, command);
+        bot.commands.set(command.config.name, command);
       }
     });
     bot.command = commandArray;

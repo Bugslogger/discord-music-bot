@@ -13,8 +13,9 @@ module.exports.run = async (bot, interaction) => {
 
     if (queue.playing) {
       queue.stop(interaction);
+      TextEmbed(interaction, { title: "I stopped playing.", desc: "" });
     } else {
-      interaction.reply("Nothing is playing!");
+      TextEmbed(interaction, { title: "Nothing is playing!", desc: "" });
     }
   } catch (error) {
     console.log(error);
